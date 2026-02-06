@@ -1,0 +1,86 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/app/privacy-policy/page.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+.page_page__wCurA {
+    margin-top: var(--header-height);
+    min-height: calc(100vh - var(--header-height));
+}
+
+.page_hero__0BQZh {
+    background-color: var(--color-offwhite);
+    padding: var(--spacing-3xl) 0;
+    text-align: center;
+}
+
+.page_container__nt0kj {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+}
+
+.page_title__6jqtk {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: var(--color-text);
+    margin-bottom: var(--spacing-md);
+}
+
+.page_lastUpdated__b1w64 {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+}
+
+.page_contentSection__qQN_d {
+    padding: var(--spacing-3xl) 0;
+    background-color: var(--color-white);
+}
+
+.page_content__owVNA {
+    color: var(--color-text);
+    line-height: 1.8;
+}
+
+.page_content__owVNA h2 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
+}
+
+.page_content__owVNA h2:first-child {
+    margin-top: 0;
+}
+
+.page_content__owVNA p {
+    margin-bottom: var(--spacing-md);
+}
+
+.page_content__owVNA ul {
+    list-style: disc;
+    margin-left: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
+}
+
+.page_content__owVNA li {
+    margin-bottom: var(--spacing-sm);
+}
+
+.page_content__owVNA address {
+    font-style: normal;
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-md);
+    background-color: var(--color-offwhite);
+    border-left: 3px solid var(--color-primary);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+@media (max-width: 768px) {
+    .page_hero__0BQZh {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .page_contentSection__qQN_d {
+        padding: var(--spacing-2xl) 0;
+    }
+}

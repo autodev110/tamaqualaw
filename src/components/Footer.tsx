@@ -14,6 +14,15 @@ export default function Footer() {
                     </Link>{' '}
                     - All Rights Reserved.
                 </p>
+                <div className={styles.legalLinks}>
+                    <Link href="/privacy-policy" className={styles.legalLink}>
+                        Privacy Policy
+                    </Link>
+                    <span className={styles.separator}>|</span>
+                    <Link href="/terms-of-service" className={styles.legalLink}>
+                        Terms of Service
+                    </Link>
+                </div>
             </div>
         </footer>
     );

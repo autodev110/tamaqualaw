@@ -37,3 +37,26 @@
         font-size: 0.85rem;
     }
 }
+
+.legalLinks {
+    margin-top: var(--spacing-sm);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-md);
+    font-size: 0.85rem;
+}
+
+.legalLink {
+    color: var(--color-text-light);
+    transition: color var(--transition-fast);
+}
+
+.legalLink:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.separator {
+    color: var(--color-border);
+}

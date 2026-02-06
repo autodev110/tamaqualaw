@@ -153,6 +153,29 @@
         font-size: 0.85rem;
     }
 }
+
+.Footer_legalLinks__ABuv_ {
+    margin-top: var(--spacing-sm);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-md);
+    font-size: 0.85rem;
+}
+
+.Footer_legalLink__VU9ur {
+    color: var(--color-text-light);
+    transition: color var(--transition-fast);
+}
+
+.Footer_legalLink__VU9ur:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.Footer_separator__vW02z {
+    color: var(--color-border);
+}
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./src/app/globals.css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************/
