@@ -1,0 +1,250 @@
+.page {
+    margin-top: var(--header-height);
+    min-height: calc(100vh - var(--header-height));
+}
+
+.hero {
+    background-color: var(--color-offwhite);
+    padding: var(--spacing-3xl) 0;
+    text-align: center;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+}
+
+.title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: var(--color-text);
+    margin: 0;
+}
+
+.contactSection {
+    padding: var(--spacing-3xl) 0;
+}
+
+.contactGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+}
+
+/* Form Column */
+.formColumn {
+    max-width: 450px;
+}
+
+.formTitle {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-xl);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.formGroup {
+    width: 100%;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    padding: var(--spacing-md);
+    font-size: 1rem;
+    font-family: inherit;
+    color: var(--color-text);
+    background-color: var(--color-white);
+    border: none;
+    border-bottom: 1px solid var(--color-border);
+    transition: border-color var(--transition-fast);
+}
+
+.input:focus,
+.textarea:focus {
+    outline: none;
+    border-bottom-color: var(--color-primary);
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submitButton {
+    width: 100%;
+    padding: var(--spacing-md) var(--spacing-xl);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-text);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-text);
+    border-radius: 0;
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.submitButton:hover {
+    background-color: var(--color-text);
+    color: var(--color-white);
+}
+
+.submitButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.successMessage {
+    color: var(--color-primary);
+    font-size: 0.95rem;
+    margin-top: var(--spacing-sm);
+}
+
+.disclaimer {
+    margin-top: var(--spacing-lg);
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    text-align: center;
+}
+
+.link {
+    color: var(--color-accent);
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: var(--color-primary);
+}
+
+/* Info Column */
+.infoColumn {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.legalNotice {
+    font-size: 0.95rem;
+    color: var(--color-text-light);
+    line-height: 1.7;
+}
+
+.businessInfo {
+    border-left: 3px solid var(--color-primary);
+    padding-left: var(--spacing-lg);
+}
+
+.businessName {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-sm);
+}
+
+.address {
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-xs);
+}
+
+.phone a {
+    color: var(--color-text);
+    font-weight: 500;
+    transition: color var(--transition-fast);
+}
+
+.phone a:hover {
+    color: var(--color-accent);
+}
+
+.hours {
+    padding-top: var(--spacing-md);
+}
+
+.hoursTitle {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-md);
+}
+
+.hoursList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.hoursRow {
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
+.day {
+    font-weight: 500;
+    color: var(--color-text);
+    min-width: 40px;
+}
+
+.time {
+    color: var(--color-text-light);
+}
+
+.socialSection {
+    padding-top: var(--spacing-md);
+}
+
+.socialLink {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--color-primary);
+    font-weight: 500;
+    transition: color var(--transition-fast);
+}
+
+.socialLink:hover {
+    color: var(--color-accent);
+}
+
+.socialIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.directionsLink {
+    color: var(--color-accent);
+    font-weight: 500;
+    text-decoration: underline;
+    transition: color var(--transition-fast);
+}
+
+.directionsLink:hover {
+    color: var(--color-primary);
+}
+
+@media (max-width: 900px) {
+    .contactGrid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+
+    .formColumn {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .contactSection {
+        padding: var(--spacing-2xl) 0;
+    }
+}

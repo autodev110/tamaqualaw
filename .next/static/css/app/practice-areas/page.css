@@ -1,0 +1,134 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/app/practice-areas/page.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+.page_page__6UV61 {
+    margin-top: var(--header-height);
+    min-height: calc(100vh - var(--header-height));
+}
+
+.page_hero__MLRdC {
+    background-color: var(--color-offwhite);
+    padding: var(--spacing-3xl) 0;
+    text-align: center;
+}
+
+.page_container__l0YYf {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+}
+
+.page_title__Ap9Un {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: var(--color-text);
+    margin-bottom: var(--spacing-xl);
+}
+
+.page_description__yQk_2 {
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--color-text-light);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.page_areasSection__S3srG {
+    padding: var(--spacing-3xl) 0;
+}
+
+.page_sectionTitle__vpzBr {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.page_areasGrid__Hcemg {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: var(--spacing-xl);
+    gap: var(--spacing-xl);
+}
+
+.page_areaCard__GZwAL {
+    background-color: var(--color-white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.page_areaCard__GZwAL:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.page_imageWrapper__LjMz7 {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.page_image__U6KOh {
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.page_areaCard__GZwAL:hover .page_image__U6KOh {
+    transform: scale(1.05);
+}
+
+.page_imageOverlay__M9NER {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom,
+            transparent 50%,
+            rgba(0, 0, 0, 0.3) 100%);
+}
+
+.page_cardContent__8mafE {
+    padding: var(--spacing-lg);
+}
+
+.page_areaTitle__3ZF4Q {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.page_areaDescription__uzTMt {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .page_areasGrid__Hcemg {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .page_areasGrid__Hcemg {
+        grid-template-columns: 1fr;
+    }
+
+    .page_hero__MLRdC {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .page_areasSection__S3srG {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .page_imageWrapper__LjMz7 {
+        height: 180px;
+    }
+}

@@ -1,0 +1,343 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/app/about/page.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+.page_page__bHvK0 {
+    margin-top: var(--header-height);
+    min-height: calc(100vh - var(--header-height));
+}
+
+/* Hero Section */
+.page_hero__qs3fl {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    padding: var(--spacing-3xl) 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.page_hero__qs3fl::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.5;
+}
+
+.page_heroContent__FRIOO {
+    position: relative;
+    z-index: 1;
+}
+
+.page_heroTitle__TNakO {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    color: var(--color-white);
+    margin-bottom: var(--spacing-md);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.page_heroSubtitle__B1fUc {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Container */
+.page_container__eSsIu {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+}
+
+/* Team Photo Section */
+.page_teamPhotoSection__g7mCY {
+    padding: var(--spacing-3xl) 0;
+    background-color: var(--color-offwhite);
+    position: relative;
+}
+
+.page_teamPhotoSection__g7mCY::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+}
+
+.page_photoCard__z7zv4 {
+    position: relative;
+    z-index: 1;
+    max-width: 420px;
+    margin: 0 auto;
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+}
+
+.page_photoWrapper__Olkrk {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4/5;
+    overflow: hidden;
+}
+
+.page_teamPhoto__hCtnw {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.page_photoCaption__p2K6t {
+    padding: var(--spacing-lg);
+    text-align: center;
+    background: var(--color-white);
+}
+
+.page_photoCaption__p2K6t p {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-xs);
+}
+
+.page_photoCaption__p2K6t span {
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    font-weight: 500;
+}
+
+/* Profiles Section */
+.page_profilesSection__TBtiL {
+    padding: var(--spacing-3xl) 0;
+    background-color: var(--color-white);
+}
+
+.page_profilesGrid__gwg7K {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: var(--spacing-2xl);
+    gap: var(--spacing-2xl);
+}
+
+.page_profileCard__B5HV4 {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-2xl);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--color-border);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.page_profileCard__B5HV4:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+.page_profileHeader__c93tc {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.page_profileIcon__kur8f {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.page_profileIcon__kur8f svg {
+    width: 32px;
+    height: 32px;
+    color: var(--color-white);
+}
+
+.page_profileTitles__pkeq6 {
+    flex: 1 1;
+}
+
+.page_profileName__WU3R2 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-text);
+    margin: 0 0 var(--spacing-xs) 0;
+}
+
+.page_profileRole__tVKDW {
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.page_profileDivider__cQpte {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-accent) 100%);
+    margin-bottom: var(--spacing-lg);
+    border-radius: 2px;
+}
+
+.page_profileBio__OWUgK {
+    margin-bottom: var(--spacing-lg);
+}
+
+.page_profileBio__OWUgK p {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+    line-height: 1.8;
+    white-space: pre-line;
+    margin: 0;
+}
+
+.page_toggleButton__igXfl {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--color-primary);
+    font-size: 0.95rem;
+    font-weight: 600;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--spacing-sm) 0;
+    transition: color var(--transition-fast);
+}
+
+.page_toggleButton__igXfl:hover {
+    color: var(--color-accent);
+}
+
+.page_toggleButton__igXfl svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Values Section */
+.page_valuesSection___3_Wc {
+    padding: var(--spacing-3xl) 0;
+    background: linear-gradient(180deg, var(--color-offwhite) 0%, var(--color-white) 100%);
+}
+
+.page_valuesTitle__1fui9 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    color: var(--color-text);
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.page_valuesGrid__z_Jw_ {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: var(--spacing-xl);
+    gap: var(--spacing-xl);
+}
+
+.page_valueCard__hrsHn {
+    text-align: center;
+    padding: var(--spacing-xl);
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.page_valueCard__hrsHn:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.page_valueIcon__Z5ly_ {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto var(--spacing-lg);
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-light) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page_valueIcon__Z5ly_ svg {
+    width: 36px;
+    height: 36px;
+    color: var(--color-white);
+}
+
+.page_valueCard__hrsHn h3 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.page_valueCard__hrsHn p {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .page_profilesGrid__gwg7K {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .page_valuesGrid__z_Jw_ {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .page_hero__qs3fl {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .page_teamPhotoSection__g7mCY,
+    .page_profilesSection__TBtiL,
+    .page_valuesSection___3_Wc {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .page_profileCard__B5HV4 {
+        padding: var(--spacing-lg);
+    }
+
+    .page_profileHeader__c93tc {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .page_profileDivider__cQpte {
+        margin: 0 auto var(--spacing-lg);
+    }
+
+    .page_profileBio__OWUgK {
+        text-align: center;
+    }
+
+    .page_toggleButton__igXfl {
+        justify-content: center;
+        width: 100%;
+    }
+}

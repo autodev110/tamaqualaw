@@ -1,0 +1,637 @@
+.page {
+    margin-top: var(--header-height);
+}
+
+/* ========================================
+   Hero Section
+   ======================================== */
+
+.hero {
+    position: relative;
+    min-height: calc(100vh - var(--header-height));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.heroBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.heroImage {
+    object-fit: cover;
+    object-position: center;
+}
+
+.heroOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg,
+            rgba(114, 47, 55, 0.85) 0%,
+            rgba(0, 0, 0, 0.7) 100%);
+}
+
+.heroContent {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: var(--spacing-xl);
+    max-width: 900px;
+    animation: fadeInUp 1s ease forwards;
+}
+
+
+
+.heroTitle {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    color: var(--color-white);
+    line-height: 1.15;
+    margin-bottom: var(--spacing-lg);
+}
+
+.heroTitleAccent {
+    display: block;
+    color: var(--color-accent);
+}
+
+.heroSubtitle {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-2xl);
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heroCtas {
+    display: flex;
+    gap: var(--spacing-lg);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ctaPrimary {
+    padding: var(--spacing-md) var(--spacing-2xl);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text);
+    background: var(--color-accent);
+    border-radius: var(--radius-full);
+    transition: all var(--transition-base);
+    text-decoration: none;
+}
+
+.ctaPrimary:hover {
+    background: var(--color-accent-light);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(201, 162, 39, 0.4);
+    color: var(--color-text);
+}
+
+.ctaSecondary {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md) var(--spacing-xl);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-white);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: var(--radius-full);
+    transition: all var(--transition-base);
+    text-decoration: none;
+}
+
+.ctaSecondary svg {
+    width: 20px;
+    height: 20px;
+}
+
+.ctaSecondary:hover {
+    background: var(--color-white);
+    color: var(--color-primary);
+    border-color: var(--color-white);
+}
+
+.scrollIndicator {
+    position: absolute;
+    bottom: var(--spacing-2xl);
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.85rem;
+    animation: bounce 2s infinite;
+}
+
+.scrollArrow {
+    width: 24px;
+    height: 24px;
+    margin: var(--spacing-sm) auto 0;
+    border: 2px solid currentColor;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    40% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+
+    60% {
+        transform: translateX(-50%) translateY(-5px);
+    }
+}
+
+
+
+/* ========================================
+   About Section
+   ======================================== */
+
+.aboutSection {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-white);
+}
+
+.aboutGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+}
+
+.aboutImage {
+    position: relative;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.aboutPhoto {
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
+    width: 100%;
+    height: auto;
+}
+
+.aboutImageDecor {
+    position: absolute;
+    top: var(--spacing-xl);
+    left: var(--spacing-xl);
+    right: calc(-1 * var(--spacing-xl));
+    bottom: calc(-1 * var(--spacing-xl));
+    border: 3px solid var(--color-accent);
+    border-radius: var(--radius-lg);
+    z-index: -1;
+}
+
+.sectionLabel {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: var(--spacing-md);
+}
+
+.aboutTitle {
+    font-family: var(--font-heading);
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    color: var(--color-text);
+    line-height: 1.2;
+    margin-bottom: var(--spacing-lg);
+}
+
+.aboutTitle span {
+    color: var(--color-primary);
+}
+
+.aboutText {
+    color: var(--color-text-light);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-lg);
+}
+
+.aboutLink {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 1rem;
+    transition: gap var(--transition-base), color var(--transition-fast);
+}
+
+.aboutLink svg {
+    width: 20px;
+    height: 20px;
+    transition: transform var(--transition-base);
+}
+
+.aboutLink:hover {
+    color: var(--color-accent);
+}
+
+.aboutLink:hover svg {
+    transform: translateX(5px);
+}
+
+/* ========================================
+   Practice Areas Section
+   ======================================== */
+
+.practiceSection {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-offwhite);
+}
+
+.practiceHeader {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.practiceTitle {
+    font-family: var(--font-heading);
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    color: var(--color-text);
+    margin-bottom: var(--spacing-sm);
+}
+
+.practiceSubtitle {
+    color: var(--color-text-light);
+    font-size: 1.1rem;
+}
+
+.practiceGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.practiceCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-xl);
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    transition: all var(--transition-base);
+    position: relative;
+    overflow: hidden;
+}
+
+.practiceCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-accent) 100%);
+    transform: scaleX(0);
+    transition: transform var(--transition-base);
+}
+
+.practiceCard:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.practiceCard:hover::before {
+    transform: scaleX(1);
+}
+
+.practiceIcon {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.practiceCardTitle {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-sm);
+    text-align: center;
+}
+
+.practiceArrow {
+    color: var(--color-accent);
+    font-size: 1.5rem;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all var(--transition-base);
+}
+
+.practiceCard:hover .practiceArrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.practiceFooter {
+    text-align: center;
+    margin-top: var(--spacing-2xl);
+}
+
+.practiceViewAll {
+    display: inline-block;
+    padding: var(--spacing-md) var(--spacing-2xl);
+    color: var(--color-primary);
+    font-weight: 600;
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-full);
+    transition: all var(--transition-base);
+}
+
+.practiceViewAll:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* ========================================
+   CTA Section
+   ======================================== */
+
+.ctaSection {
+    position: relative;
+    padding: var(--spacing-3xl) 0;
+    overflow: hidden;
+}
+
+.ctaBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.ctaBgImage {
+    object-fit: cover;
+}
+
+.ctaOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg,
+            rgba(114, 47, 55, 0.95) 0%,
+            rgba(90, 37, 44, 0.9) 100%);
+}
+
+.ctaContent {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.ctaTitle {
+    font-family: var(--font-heading);
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    color: var(--color-white);
+    margin-bottom: var(--spacing-lg);
+}
+
+.ctaText {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.ctaButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.ctaButton {
+    padding: var(--spacing-md) var(--spacing-2xl);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-text);
+    background: var(--color-accent);
+    border-radius: var(--radius-full);
+    transition: all var(--transition-base);
+}
+
+.ctaButton:hover {
+    background: var(--color-accent-light);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(201, 162, 39, 0.4);
+    color: var(--color-text);
+}
+
+.ctaPhone {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    transition: color var(--transition-fast);
+}
+
+.ctaPhone:hover {
+    color: var(--color-accent);
+}
+
+/* ========================================
+   Location Section
+   ======================================== */
+
+.locationSection {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-white);
+}
+
+.locationGrid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--spacing-2xl);
+    align-items: start;
+}
+
+.locationTitle {
+    font-family: var(--font-heading);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: var(--color-text);
+    margin-bottom: var(--spacing-lg);
+}
+
+.locationAddress {
+    font-style: normal;
+    color: var(--color-text-light);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-lg);
+}
+
+.locationAddress strong {
+    color: var(--color-text);
+    font-size: 1.1rem;
+}
+
+.locationAddress p {
+    margin: 0;
+}
+
+.locationHours {
+    margin-bottom: var(--spacing-lg);
+}
+
+.locationHours h3 {
+    font-size: 1rem;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-sm);
+}
+
+.locationHours p {
+    color: var(--color-text-light);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.locationLink {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--color-primary);
+    font-weight: 600;
+    transition: color var(--transition-fast);
+}
+
+.locationLink svg {
+    width: 20px;
+    height: 20px;
+}
+
+.locationLink:hover {
+    color: var(--color-accent);
+}
+
+.locationMap {
+    height: 350px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.mapPlaceholder {
+    width: 100%;
+    height: 100%;
+    background: var(--color-offwhite);
+}
+
+.mapPlaceholder iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* ========================================
+   Responsive Styles
+   ======================================== */
+
+@media (max-width: 1024px) {
+    .aboutGrid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+
+    .aboutImage {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .aboutContent {
+        text-align: center;
+    }
+
+    .aboutLink {
+        justify-content: center;
+    }
+
+    .locationGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .locationInfo {
+        text-align: center;
+    }
+
+    .locationLink {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .statsGrid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .statCard {
+        padding: var(--spacing-md);
+    }
+
+    .practiceGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .heroCtas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .scrollIndicator {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .practiceGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .aboutImageDecor {
+        display: none;
+    }
+
+    .hero {
+        min-height: 600px;
+    }
+}
