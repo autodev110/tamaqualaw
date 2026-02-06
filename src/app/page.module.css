@@ -177,6 +177,13 @@
 
 
 
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+}
+
 /* ========================================
    About Section
    ======================================== */
@@ -599,14 +606,7 @@
 }
 
 @media (max-width: 768px) {
-    .statsGrid {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-md);
-    }
 
-    .statCard {
-        padding: var(--spacing-md);
-    }
 
     .practiceGrid {
         grid-template-columns: repeat(2, 1fr);

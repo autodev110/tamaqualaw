@@ -12,11 +12,11 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/practice-areas/page": [
+    "/contact/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/practice-areas/page.css",
-      "static/chunks/app/practice-areas/page.js"
+      "static/css/app/contact/page.css",
+      "static/chunks/app/contact/page.js"
     ],
     "/about/page": [
       "static/chunks/webpack.js",
@@ -24,23 +24,11 @@
       "static/css/app/about/page.css",
       "static/chunks/app/about/page.js"
     ],
-    "/contact/page": [
+    "/practice-areas/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/contact/page.css",
-      "static/chunks/app/contact/page.js"
-    ],
-    "/privacy-policy/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/privacy-policy/page.css",
-      "static/chunks/app/privacy-policy/page.js"
-    ],
-    "/terms-of-service/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/terms-of-service/page.css",
-      "static/chunks/app/terms-of-service/page.js"
+      "static/css/app/practice-areas/page.css",
+      "static/chunks/app/practice-areas/page.js"
     ]
   }
 }

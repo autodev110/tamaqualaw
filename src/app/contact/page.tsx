@@ -36,13 +36,28 @@ export default function ContactPage() {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
+        setSubmitMessage('');
 
-        // Simulate form submission
-        await new Promise((resolve) => setTimeout(resolve, 1000));
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
 
-        setSubmitMessage('Thank you for your message. We will get back to you soon.');
-        setFormData({ name: '', email: '', message: '' });
-        setIsSubmitting(false);
+            if (response.ok) {
+                setSubmitMessage('Thank you for your message. We will get back to you soon.');
+                setFormData({ name: '', email: '', message: '' });
+            } else {
+                setSubmitMessage('Something went wrong. Please try again later.');
+            }
+        } catch (error) {
+            setSubmitMessage('An error occurred. Please try again later.');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (

@@ -180,6 +180,13 @@
 
 
 
+
+.page_container__aoG4z {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+}
+
 /* ========================================
    About Section
    ======================================== */
@@ -605,14 +612,7 @@
 }
 
 @media (max-width: 768px) {
-    .page_statsGrid__GCW2d {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-md);
-    }
 
-    .page_statCard__VGdKs {
-        padding: var(--spacing-md);
-    }
 
     .page_practiceGrid__zNFVw {
         grid-template-columns: repeat(2, 1fr);
